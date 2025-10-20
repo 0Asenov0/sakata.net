@@ -55,7 +55,7 @@ const Home: React.FC = () => {
               }}
             >
               <iframe
-                src="/dyno/t-rex-runner-gh-pages/index.html"
+                src="/sakata.net/dyno/t-rex-runner-gh-pages/index.html"
                 title="Offline Dino Game"
                 style={{
                   width: '100%',
