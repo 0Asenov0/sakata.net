@@ -17,7 +17,7 @@ const Education: React.FC<EducationProps> = ({ educationList }) => {
       <div className="container">
            <h2 className="section-title">Education</h2>
         {educationList.map((edu, index) => (
-          <div key={index} className="about-content">
+          <div key={index} className="about-content-">
             <div className="about-text">
               <span className="status">{`Status: ${edu.status}`}</span>
               <h3>{edu.institution}</h3>

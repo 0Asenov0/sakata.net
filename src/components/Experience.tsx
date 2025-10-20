@@ -17,7 +17,7 @@ const Experience: React.FC<ExperienceProps> = ({ jobs }) => {
       <div className="container">
         <h2 className="section-title">Job Experience</h2>
         {jobs.map((job, index) => (
-          <div key={index} className="about-content">
+          <div key={index} className="about-content-">
             <div className="about-text">
               <h3>{job.company}</h3>
               <p>{job.description}</p>

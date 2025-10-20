@@ -28,7 +28,7 @@ const App: React.FC = () => {
   const experienceList = [
     {
       company: "Hardware Verification",
-      description: "Worked hardware verification which consisted of: Creating tests for verifying digital logic design work correct. Using simulation tools and waveform analysis for analysing results. Team meetings and discussions of suitable solutions.",
+      description: "Performed hardware verification, including creating tests to ensure digital logic designs functioned correctly. Utilized simulation tools and waveform analysis to evaluate results. Participated in team meetings and discussions to identify and implement suitable solutions.",
       skills: ["Linux","System Verilog","Verilog","Microsoft Office","Python","SVN","JIRA"]
     }
   ];
