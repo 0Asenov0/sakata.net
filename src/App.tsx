@@ -37,7 +37,7 @@ const App: React.FC = () => {
     {
       image: "/sakata.net/images/test-system.png",
       title: "Online Test System Web App",
-      description: "Web application for managing and executing tests and methods for cheating prevention using events and pre-trained ML model Blazeface and Tensorflow for execution in browser.",
+      description: "Web application for managing and executing tests with  cheating prevention methods such as using pre-trained ML model Blazeface for face detection and Tensorflow for execution in browser.",
       status: "Completed",
       tech: ["Java","Spring","MySQL","REST","JWT","Tensorflow","JavaScript","HTML","CSS"],
       url:"https://github.com/0Asenov0"
@@ -53,7 +53,7 @@ const App: React.FC = () => {
     {
       image: "/sakata.net/images/android.png",
       title: "Android App Smart Home",
-      description: "Android app for controlling home appliances (lights, doors, fan and curtains) in real time. Using ESP8266 microcontroller in C using Arduino IDE as web server to handle device commands.",
+      description: "Android app for controlling home appliances (lights, doors, fan and curtains) in real time. Using ESP8266 WIFI microcontroller (programmed in C using Arduino IDE) as web server to handle commands.",
       status: "Completed",
       tech: ["Android","Java","C","Arduino","ESP8266 microcontroller"],
       url:"https://github.com/0Asenov0"
@@ -70,7 +70,7 @@ const App: React.FC = () => {
     {
       image: "/sakata.net/images/car-data.png",
       title: "Car Data Log Summary",
-      description: "Script generating summarized information about collected data log while driving using VagCom interface through the OBD-II port. Summary of relation between Oil and Coolant temperature during warmup. The relation between DPF temps, RPM, Boost Pressure, Oil temps, Coolant temps and Lamda sensor values during driving in different scenarios.",
+      description: "Script generating summarized information about collected data log while driving, using VagCom interface through the OBD-II port. Summary of relation between Oil and Coolant temperature during warmup. The relation between DPF temps, RPM, Boost Pressure, Oil temps, Coolant temps and Lamda sensor values during driving in different scenarios.",
       status: "Completed",
       tech: ["Python"],
       url:"https://github.com/0Asenov0"
