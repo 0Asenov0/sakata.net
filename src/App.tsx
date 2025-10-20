@@ -35,7 +35,7 @@ const App: React.FC = () => {
 
   const projectsList: Project[] = [
     {
-      image: "/images/test-system.png",
+      image: "/sakata.net/images/test-system.png",
       title: "Online Test System Web App",
       description: "Web application for managing and executing tests and methods for cheating prevention using events and pre-trained ML model Blazeface and Tensorflow for execution in browser.",
       status: "Completed",
@@ -43,7 +43,7 @@ const App: React.FC = () => {
       url:"https://github.com/0Asenov0"
     },
     {
-      image: "/images/weather.png",
+      image: "/sakata.net/images/weather.png",
       title: "Weather App",
       description: "Weather web app for real time weather data. Using OpenStreetMap API for city coordinates and Open-Meteo API for real-time weather data. Implemented automated tests and configured GitHub Actions to run tests on every code push.",
       status: "Completed",
@@ -51,7 +51,7 @@ const App: React.FC = () => {
       url:"https://github.com/0Asenov0"
     },
     {
-      image: "/images/android.png",
+      image: "/sakata.net/images/android.png",
       title: "Android App Smart Home",
       description: "Android app for controlling home appliances (lights, doors, fan and curtains) in real time. Using ESP8266 microcontroller in C using Arduino IDE as web server to handle device commands.",
       status: "Completed",
@@ -59,7 +59,7 @@ const App: React.FC = () => {
       url:"https://github.com/0Asenov0"
     },
     {
-      image: "/images/under-construction.png",
+      image: "/sakata.net/images/under-construction.png",
       title: "Ticket Platform Web App",
       description: "Web app platform for creating events and buying tickets. Events will have customizable seat layout suitable for the needs of every organiser.",
       status: "In progress",
@@ -68,7 +68,7 @@ const App: React.FC = () => {
       url:"https://github.com/0Asenov0"
     },
     {
-      image: "/images/car-data.png",
+      image: "/sakata.net/images/car-data.png",
       title: "Car Data Log Summary",
       description: "Script generating summarized information about collected data log while driving using VagCom interface through the OBD-II port. Summary of relation between Oil and Coolant temperature during warmup. The relation between DPF temps, RPM, Boost Pressure, Oil temps, Coolant temps and Lamda sensor values during driving in different scenarios.",
       status: "Completed",
