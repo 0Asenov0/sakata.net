@@ -8,7 +8,6 @@ import Projects from './components/Projects';
 import type { Project } from './components/Projects';
 import Footer from './components/Footer';
 import './index.css';
-import AboutMeMore from './components/AboutMeMore';
 import TechStack from './components/TechStack';
 
 const App: React.FC = () => {
@@ -17,10 +16,6 @@ const App: React.FC = () => {
     "JavaScript","PHP","HTML","CSS","JWT","REST API","Docker","Kafka",
     "Linux","TCP/IP","CI/CD","Git/Github","Arduino","Microsoft Office",
   ];
-
-  const interests = [
-    "Motorsports", "Cars", "Motorcycles", "Cinematography", "Sports", "Fitness","Hiking", "Travelling"
-  ]
 
   const educationList = [
     {
@@ -33,7 +28,7 @@ const App: React.FC = () => {
   const experienceList = [
     {
       company: "Hardware Verification",
-      description: "Hardware verification at Sibiz consisting of: Creating tests for verifying digital logic design work correct. Using simulation tools and waveform analysis for analysing results. Team meetings and discussions of suitable solutions.",
+      description: "Worked hardware verification which consisted of: Creating tests for verifying digital logic design work correct. Using simulation tools and waveform analysis for analysing results. Team meetings and discussions of suitable solutions.",
       skills: ["Linux","System Verilog","Verilog","Microsoft Office","Python","SVN","JIRA"]
     }
   ];
@@ -94,7 +89,6 @@ const App: React.FC = () => {
       <About />
       <TechStack skills={skills}/>
       <Projects projects={projectsList} />
-      <AboutMeMore interests = {interests}/>
       <Education educationList={educationList} />
       <Experience jobs={experienceList} />
       <Footer links={footerLinks} />

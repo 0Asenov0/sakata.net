@@ -29,7 +29,7 @@ const Home: React.FC = () => {
             {/* Dino Game Toggle Buttons */}
             {!showGame && (
               <button className="btn" onClick={() => setShowGame(true)}>
-                Play Dino Game
+                Play Game
               </button>
             )}
 
@@ -47,7 +47,7 @@ const Home: React.FC = () => {
                 display: 'flex',
                 justifyContent: 'center',
                 width: '100%',
-                maxWidth: '800px', // max width for large screens
+                maxWidth: '800px',
                 border: '2px solid var(--primary-color)',
                 borderRadius: '10px',
                 padding: '10px',
@@ -59,9 +59,9 @@ const Home: React.FC = () => {
                 title="Offline Dino Game"
                 style={{
                   width: '100%',
-                  height: '330px', // bigger height for the game
+                  height: '330px', 
                   border: 'none',
-                  minWidth: '567px', // ensures minimum playable width
+                  minWidth: '567px', 
                 }}
               ></iframe>
             </div>

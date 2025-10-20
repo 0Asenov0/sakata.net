@@ -6,7 +6,7 @@ describe("Home Component", () => {
   test("renders greeting and button", () => {
     render(<Home />);
     expect(screen.getByText("Hi, I am")).toBeInTheDocument();
-    expect(screen.getByText("Play Dino Game")).toBeInTheDocument();
+    expect(screen.getByText("Play Game")).toBeInTheDocument();
   });
 
   describe("Home Buttons", () => {
@@ -18,14 +18,14 @@ describe("Home Component", () => {
 
     test("shows iframe when clicking Play button", () => {
       render(<Home />);
-      const playButton = screen.getByText("Play Dino Game");
+      const playButton = screen.getByText("Play Game");
       fireEvent.click(playButton);
       expect(screen.getByTitle("Offline Dino Game")).toBeInTheDocument();
     });
 
     test("hides iframe when clicking Close button", () => {
       render(<Home />);
-      const playButton = screen.getByText("Play Dino Game");
+      const playButton = screen.getByText("Play Game");
       fireEvent.click(playButton);
 
       const closeButton = screen.getByText("Close Game");
