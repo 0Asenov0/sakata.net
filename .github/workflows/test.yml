@@ -7,6 +7,8 @@ on:
 jobs:
   test-and-deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write   # 👈 allows pushing to gh-pages
 
     steps:
       - name: Checkout code
@@ -24,11 +26,9 @@ jobs:
         run: npm test -- --watchAll=false
 
       - name: Build project
-        if: success() 
         run: npm run build
 
       - name: Deploy to GitHub Pages
-        if: success()  
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
