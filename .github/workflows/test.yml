@@ -1,20 +1,18 @@
-name: Run Tests
+name: Test and Deploy React App
 
 on:
   push:
-    branches: [ test ]
-  pull_request:
-    branches: [ main ]
+    branches: [ test ]  # triggers when pushing to test
 
 jobs:
-  test:
+  test-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Set up Node.js
+      - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 20
@@ -24,3 +22,14 @@ jobs:
 
       - name: Run tests
         run: npm test -- --watchAll=false
+
+      - name: Build project
+        if: success() 
+        run: npm run build
+
+      - name: Deploy to GitHub Pages
+        if: success()  
+        uses: peaceiris/actions-gh-pages@v6
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
